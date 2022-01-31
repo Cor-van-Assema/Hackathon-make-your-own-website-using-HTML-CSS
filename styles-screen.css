@@ -12,7 +12,7 @@
 .container {
     display: grid; 
     /*grid-template-columns: 1fr 2fr ;*/
-    grid-template-rows: 5rem 1fr 4rem 1.2rem;
+    grid-template-rows: 1fr 80fr 4fr 1fr;
     font-size: larger;
     color:#fff;
     height:100%;
