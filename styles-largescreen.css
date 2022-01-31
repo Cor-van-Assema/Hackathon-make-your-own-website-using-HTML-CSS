@@ -17,7 +17,7 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(11,2fr) 1fr;
     grid-template-areas: 
-        "h h h h h h h h h h h h"
+        "s s s h h h h h h h h h"
         "s s s m m m m m m m m m"
         "s s s m m m m m m m m m"
         "s s s m m m m m m m m m"
@@ -27,12 +27,13 @@
         "s s s m m m m m m m m m"
         "s s s m m m m m m m m m"
         "s s s m m m m m m m m m"
-        "w w w w w w w w w w w w"
+        "s s s w w w w w w w w w"
         "f f f f f f f f f f f f";
         font-size:large;
 }
 .container > .site-header {
     grid-area: h;
+    background-image: linear-gradient(#4c0466 11%, #bb00ff );
 }
 
  .container > .site-main {
@@ -55,7 +56,9 @@
 .container > .site-sidebar {
     grid-area: s;
     background-color: #ff0000;
-    background-image: linear-gradient(#bb00ff, red ); 
+    
+    background-image: linear-gradient(#2751db,#001199); 
+    padding-top: 5%;
 }
 
 .nav-list {

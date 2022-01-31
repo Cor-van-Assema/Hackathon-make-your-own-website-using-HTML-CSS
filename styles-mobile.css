@@ -125,7 +125,8 @@ h2 {
 
 .abutton {
     color: #222; 
-    padding:3px;
+    padding:3px 10px;
+    margin:0 5px;
     text-decoration: none;
     border-left:2px solid white;
     border-bottom:2px solid white;
@@ -136,7 +137,6 @@ h2 {
 
 .abutton:hover {
     color: #fff;
-    padding:4px;
     text-decoration: none;
     border-left:2px solid #666;
     border-bottom:2px solid #666;
