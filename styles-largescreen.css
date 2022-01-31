@@ -32,6 +32,7 @@
         font-size:large;
 }
 .container > .site-header {
+    height: fit-content;
     grid-area: h;
     height: 6rem;
  }
@@ -44,19 +45,19 @@
 
 .container > .site-navigation {
     grid-area: w;
-    height:100%;
+    height:fit-content;
     background-color: #ff0000;
     background-image: linear-gradient(red,#001199 ); 
 }
 
  .container > .site-footer {
-    height: 2rem;
+    height: fit-content;
     grid-area: f;
     background-image: linear-gradient(#001199,#060a27); 
  }
 
 .container > .site-sidebar {
-    height:100%;
+    height:100vh;
     grid-area: s;
     background-color: #ff0000;
     background-image: linear-gradient(#bb00ff, red ); 
