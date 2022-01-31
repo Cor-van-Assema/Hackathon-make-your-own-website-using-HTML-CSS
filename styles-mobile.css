@@ -55,6 +55,8 @@ h2 {
     height:100%;
     background-color: #ff0000;
     background-image: linear-gradient(#bb00ff, red ); 
+    padding:5% 10%;
+    text-align:left;
 }
 
 .container > .site-navigation {
