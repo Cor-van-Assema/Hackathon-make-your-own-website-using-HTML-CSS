@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     font-size: 12px;
     position: relative;
+    overflow:hidden;
 }
 
 h1 {
