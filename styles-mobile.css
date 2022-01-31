@@ -57,6 +57,7 @@ h2 {
     background-image: linear-gradient(#bb00ff, red ); 
     padding:5% 10%;
     text-align:left;
+    overflow: scroll;
 }
 
 .container > .site-navigation {
