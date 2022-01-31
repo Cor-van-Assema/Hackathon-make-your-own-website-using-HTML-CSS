@@ -13,7 +13,7 @@
     display: grid; 
     grid-template-columns: 1fr ;
     grid-template-rows:1fr 80% 1fr 1fr;
-    font-size: larger;
+    font-size: 18px;
     color:#fff;
 }
 
