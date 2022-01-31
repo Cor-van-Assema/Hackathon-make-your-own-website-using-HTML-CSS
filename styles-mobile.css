@@ -37,7 +37,9 @@ h2 {
 .isscreen {
     display: block;
 }
-
+.notshown {
+    visibility:collapse;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -106,7 +108,7 @@ h2 {
 }
 
 .nav-list2 li {
-    padding:8px 2px;
+    padding-top:5px;
     margin-right: 3px;
 }  
 

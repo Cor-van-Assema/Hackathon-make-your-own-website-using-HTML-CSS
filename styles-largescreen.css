@@ -35,6 +35,7 @@
 .container > .site-header {
     grid-area: h;
     background-image: linear-gradient(#4c0466 11%, #bb00ff );
+    background-image: linear-gradient(#4c0466 11%, #46d622 );
 }
 
  .container > .site-main {

@@ -20,6 +20,7 @@
 
 .container > .site-header {
     grid-row: 1 / 1;
+    background-image: linear-gradient(#4c0466, #bea017);	
 }
 
 .container > .site-main {
