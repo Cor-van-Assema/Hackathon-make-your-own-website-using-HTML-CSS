@@ -1,0 +1,75 @@
+.notmobile {
+    display: block;
+}
+
+.ismobile {
+    display: none;
+}
+
+.isscreen {
+    display: none;
+}
+
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "s s s m m m m m m m m m"
+        "w w w w w w w w w w w w"
+        "f f f f f f f f f f f f";
+        font-size:large;
+}
+.container > .site-header {
+    grid-area: h;
+    height: 6rem;
+ }
+
+ .container > .site-main {
+    height:100%;
+    grid-area: m;
+    background-image: linear-gradient(#bb00ff, red ); 
+ }
+
+.container > .site-navigation {
+    grid-area: w;
+    height:100%;
+    background-color: #ff0000;
+    background-image: linear-gradient(red,#001199 ); 
+}
+
+ .container > .site-footer {
+    height: 2rem;
+    grid-area: f;
+    background-image: linear-gradient(#001199,#060a27); 
+ }
+
+.container > .site-sidebar {
+    height:100%;
+    grid-area: s;
+    background-color: #ff0000;
+    background-image: linear-gradient(#bb00ff, red ); 
+    }
+
+.nav-list {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.nav-list li {
+    padding:6px 2px;
+    margin-right: 3px;
+    
+}  
