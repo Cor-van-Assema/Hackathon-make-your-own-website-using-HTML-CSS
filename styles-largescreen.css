@@ -16,7 +16,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(11,2fr) 1fr;
+    grid-template-rows: repeat(12,1fr);
     grid-template-areas: 
         "s s s h h h h h h h h h"
         "s s s m m m m m m m m m"
@@ -39,7 +39,7 @@
 }
 
  .container > .site-main {
-    height:100%;
+    /*height:100%;*/
     grid-area: m;
     background-image: linear-gradient(#bb00ff, red ); 
  }
@@ -58,7 +58,6 @@
 .container > .site-sidebar {
     grid-area: s;
     background-color: #ff0000;
-    
     background-image: linear-gradient(#2751db,#001199); 
     padding-top: 5%;
 }
