@@ -12,8 +12,8 @@
 .container {
     display: grid; 
     grid-template-columns: 1fr ;
-    grid-template-rows:1fr 80% 1fr 1fr;
-    font-size: 18px;
+    grid-template-rows:1fr 100% 1fr 1fr;
+    font-size: 16px;
     color:#fff;
 }
 

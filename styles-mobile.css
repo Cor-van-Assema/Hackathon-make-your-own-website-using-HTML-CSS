@@ -17,6 +17,11 @@ h2 {
     margin: 0;
 }
 
+ul {
+    padding:0;
+    margin:15px;
+}
+
 .txt-center {
     text-align: center;
     padding: 0;
@@ -38,12 +43,13 @@ h2 {
     display: block;
 }
 .notshown {
-    visibility:collapse;
+    display: none;
 }
+
 .container {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     height: 100%;
 }
@@ -78,7 +84,6 @@ h2 {
 
 .nav-list {
     display:flex;
-    flex-wrap: wrap;
     flex-direction: row;
     list-style-type: none;
     padding:4px;
@@ -156,7 +161,3 @@ abutton:visited  a:active {
     color: #fff;
 }
 
-ul {
-    padding:0;
-    margin:15px;
-}

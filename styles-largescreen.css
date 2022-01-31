@@ -30,7 +30,7 @@
         "s s s m m m m m m m m m"
         "s s s w w w w w w w w w"
         "f f f f f f f f f f f f";
-        font-size:20px;
+        font-size:18px;
 }
 .container > .site-header {
     grid-area: h;
