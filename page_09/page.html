@@ -17,7 +17,7 @@
         <!--headers-->
         <header class="site-header">
             <h1 class="txt txt-center">Handleiding facturen en offertes</h1>
-            <h2 class="txt txt-center">Wat kan je er mee?</h2>
+            <h2 class="txt txt-center">Opmerkingen en vragen doorsturen</h2>
         </header>
         
         <!--main-->
@@ -25,28 +25,69 @@
             <p>
                 Je kunt met deze oplossing heel eenvoudig facturen of offertes maken die automatisch genummerd worden op basis van het jaar waarin ze verstuurd worden.
             </p>
-            <p>
-                Het is mogelijk om geleverde diensten, producten en dergelijke met hoog, laag of verlegd BTW-tarief in te voeren. Je kunt daarna de totaal-bedragen laten berekenen.
-            </p>    
-            <p>
-                Enkele features:
-                <ul>
-                    <li>documenten worden automatisch in de juiste folder opgeslagen</li>
-                    <li>er zit een adresboekje in</li>
-                    <li>oude gegevens kunnen makkelijk uit andere facturen/offertes worden overgenomen</li>
-                    <li>je kunt facturen/offertes onder constuctie openen, ze krijgen dan nog geen factuur/offerte nummer (later kun je ze dan automatisch een nummer laten geven om ze in de administratie op te nemen) </li> 
-                    <li>er worden automatisch PDF-jes aangemaakt als je een document wilt printen</li>
-                    <li>je kunt facturen/offertes als conceptmail laten opslaan in MS Outlook (kun ze later zelf versturen)</li>
-                </ul>
-            </p>   
+            <form name="OpmerkingenVragen" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Telephone number: <input type="tel" name="telephone" pattern="([+ -]|[0-9])*" /></label>
+                    <small>Use: numbers 0-9, spaces, - or + </small>
+                </p>
+                <p>
+                    <label>Your age: <input type="Number" name="Age"  min="18" max="99" /></label>
+                    <small>only 18+ </small>
+                </p>
+                <p>
+                    <label>Your date of birth: <input type="date" value="" name="DateOB" min="1922-01-01" max="2002-12-31" /></label>
+                </p>
+                <p>
+                    <label>Your gender: 
+                        <span class="gender">
+                        <input type="radio" name="Gender" value="Male" />Male
+                        <input type="radio" name="Gender" value="Female"/>Female
+                        <input type="radio" name="Gender" value="Binary"/>Binary
+                        </span>
+                    </label>
+                </p>
+                <p>
+                    <label>Your favorite cuisine: 
+                        <span class="cuisine">
+                        <input type="checkbox" name="Cuisine1" />French
+                        <input type="checkbox" name="Cuisine2" />Italian
+                        <input type="checkbox" name="Cuisine3" />Spanisch
+                        <input type="checkbox" name="Cuisine4" />Arabic
+                        </span>
+                    </label>
+                </p>
+                <p>
+                    <label>Your favorite apron color: <input type="color" name="Aproncolor" value="#ffaa99"/></label>
+                </p>
+                <p>
+                    <label>Your biography: <textarea name="Biography" rows="5" cols="60"></textarea></label>
+                </p>
+                <p>
+                    <label>Upload your latest recipe: <input type="file" name="Recipe" /></label>
+                </p>
+                <p>
+                    <label>URL to recipe website: <input type="url" name="URLRecipe" /></label>
+                </p>
+                <div id="buttons">
+                    <button type="submit" id="SendButton" >Send</button>
+                    <button type="reset" id="ResetButton" >Reset form</button>
+                </div>
+            </form>
+            
         </main>
         
         <!--navigatie-->
         <nav class="site-navigation">
             <ul class="nav-list">
-                <li><a href="../page_08/page.html"  class="abutton"           >&nbsp;&lt;&nbsp;</a></li>
+                <li><a href="../page_08/page.html"  class="abutton"           >&nbsp;&nbsp;&nbsp;&lt;&nbsp;&nbsp;&nbsp;</a></li>
                 <li><a href="../index.html"         class="abutton"           >Home</a></li>
-                <li><a href="../page_00/page.html"  class="abutton"           >&nbsp;&gt;&nbsp;</a></li>
+                <li><a href="../page_01/page.html"  class="abutton"           >&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</a></li>
             </ul>   
         </nav>
 
@@ -54,15 +95,16 @@
         <sidebar class="site-sidebar notmobile" >
             <h2>Inhoudsopgave</h2>
             <ul class="nav-list2">
-                <li><a href="../page_01/page.html">Wat kan je er mee</a></li>
-                <li><a href="../page_02/page.html">Starten</a></li>
-                <li><a href="../page_03/page.html">--</a></li>
-                <li><a href="../page_04/page.html">--</a></li>
-                <li><a href="../page_05/page.html">--</a></li>
-                <li><a href="../page_06/page.html">--</a></li>
-                <li><a href="../page_07/page.html">--</a></li>
-                <li><a href="../page_08/page.html">--</a></li>
-                <li><a href="../page_09/page.html">--</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../page_01/page.html">Wat kun je er allemaal mee doen?</a></li>
+                <li><a href="../page_02/page.html">(1) Beginnen met facturen en offertes</a></li>
+                <li><a href="../page_03/page.html">(2) Onder Constructie</a></li>
+                <li><a href="../page_04/page.html">(3) Echte en 'onder constructie' facturen</a></li>
+                <li><a href="../page_05/page.html">(4) Bewerken van factuur</a></li>
+                <li><a href="../page_06/page.html">(5) Printen en/of Emailen</a></li>
+                <li><a href="../page_07/page.html">(6) Factuur opties</a></li>
+                <li><a href="../page_08/page.html">(7) Adresboekje</a></li>
+                <li><a href="../page_09/page.html">Opmerkingen en vragen doorsturen</a></li>
             </ul>
         </sidebar>
 

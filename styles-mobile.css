@@ -118,10 +118,11 @@
         list-style-type: none;
         justify-content:left;
         box-sizing:border-box;
+        padding-right:10px;
     }
 
     .nav-list2 li {
-        padding-top:5px;
+        padding-top:10px;
     }  
 
     .nav-list2 > li > a{
@@ -183,11 +184,23 @@
     flex: 1;
     flex-basis: 100%;
     width: 100%;
-    
 }
 .picture_right {
     flex: 1;
     flex-basis: 100%;
-    width: 50%;
-    
+    width: 50%; 
 }
+#ResetButton {
+    margin-left: 50%;
+    background-color:red ;
+    border-radius: 8px;
+    padding: 5px;
+    
+}    
+
+#SendButton {
+    background-color:green ;
+    border-radius: 8px;
+    padding: 5px;
+   
+}    
