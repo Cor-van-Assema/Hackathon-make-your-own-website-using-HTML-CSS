@@ -1,3 +1,7 @@
+html, body {
+    font-size: 20px;
+}
+
 .notmobile {
     display: none;
 }
@@ -11,36 +15,32 @@
 
 .container {
     display: grid; 
-    grid-template-columns: 1fr ;
-    grid-template-rows:1fr 50fr 1fr 1fr;
-    font-size: 16px;
+    grid-auto-flow: row;
+    font-size: 1em;
     color:#fff;
+    box-sizing:border-box;
+    height:100%;
 }
 
 .container > .site-header {
-    grid-row: 1 / 1;
     background-image: linear-gradient(#4c0466, #bea017);	
-    height:fit-content auto;
+    box-sizing:border-box;
 }
 
 .container > .site-main {
-    grid-row: 2 / 2;
+    box-sizing:border-box;
     height:100%;
 }
 
 .container > .site-navigation {
-    grid-row: 3 / 3;
-    height:min-content;
-    height:fit-content;
+    box-sizing:border-box;
 }
 
 .container > .site-footer {
-    grid-row: 4 / 4;
-    height:min-content;
-    height:fit-content;
-
+    
+    box-sizing:border-box;
 }
 
-.container > .site-sidebar {
-    grid-row: 5 / 5;
-}
+/* .container > .site-sidebar {
+    
+}*/
