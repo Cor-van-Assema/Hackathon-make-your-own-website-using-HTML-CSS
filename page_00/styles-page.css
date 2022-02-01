@@ -1,4 +1,4 @@
 
 .notshown {
-    display:none
+    visibility: hidden;
 }

@@ -11,11 +11,13 @@ html, body {
 h1 {
     padding: 0;
     margin: 0;
+    font-size: 24px;
 }
 
 h2 {
     padding: 0;
     margin: 0;
+    font-size: 20px;
 }
 
 ul {
@@ -62,6 +64,7 @@ ul {
     background-image: linear-gradient(#4c0466, #bb00ff);	
     padding-bottom: 10px;
     box-sizing:border-box;
+    flex: 1;
 } 
 
 .container > .site-main {
@@ -80,11 +83,13 @@ ul {
     background-color: #da0e0e;
     background-image: linear-gradient(#da0e0e ,#001199); 
     box-sizing:border-box;
+    flex: 1;
 }
 
 .container > .site-footer {
     background-color: #001199;
     box-sizing:border-box;
+    flex: 1;
 }
 
 
@@ -95,19 +100,14 @@ ul {
     display:flex;
     flex-direction: row;
     list-style-type: none;
-    padding:4px;
-    margin: 0px;
-    align-items: center;    
-    justify-content:space-evenly;
     text-decoration: none;
-    font-size: 1rem;
+    justify-content:space-evenly;
     box-sizing:border-box;
 }
 
 .nav-list li {
-    padding:6px 2px;
-    margin-right: 3px;
-    box-sizing:border-box;
+    margin: auto;
+    padding: 0;
 }    
 
 .nav-list2 {
@@ -117,16 +117,14 @@ ul {
     list-style-type: none;
     padding:3% 5%;
     margin: 0px;
-    align-items: left;    
+    justify-content:left;
     text-decoration:none;
-    font-size: 1rem;
     box-sizing:border-box;
 }
 
 .nav-list2 li {
     padding-top:5px;
     margin-right: 3px;
-    box-sizing:border-box;
 }  
 
 .nav-list2 > li > a{
@@ -146,8 +144,6 @@ ul {
 }
 
 .abutton {
-    padding:3px 10px;
-    margin:0 5px;
     text-decoration: none;
     color: #fff;
     border-top:2px solid white;
@@ -155,7 +151,7 @@ ul {
     border-bottom:2px solid #666;
     border-left:2px solid #666;
     background-color: #999;
-    box-sizing:border-box;
+    padding:3px;
 }
 
 .abutton:hover {
