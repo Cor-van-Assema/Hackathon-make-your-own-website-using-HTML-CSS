@@ -1,5 +1,5 @@
 html, body {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .notmobile {
@@ -37,7 +37,6 @@ html, body {
 }
 
 .container > .site-footer {
-    
     box-sizing:border-box;
 }
 
