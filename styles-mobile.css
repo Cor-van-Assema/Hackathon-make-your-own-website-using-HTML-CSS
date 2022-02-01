@@ -155,4 +155,18 @@
         color: #fff;
     }
 
+   
 } /* einde media */
+
+.pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.picture {
+    flex: 1;
+    flex-basis: 10%;
+    width: 100%;
+    
+}
