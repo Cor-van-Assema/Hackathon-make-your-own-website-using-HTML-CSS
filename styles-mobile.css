@@ -38,16 +38,11 @@ ul {
 .notmobile {
     display: none;
 }
+
 .ismobile {
     display: block;
 }
 
-.isscreen {
-    display: block;
-}
-.notshown {
-    display: none;
-}
 
 /* Flex */
 .container {
@@ -113,31 +108,23 @@ ul {
 
 .nav-list2 {
     display:flex;
-    flex-wrap: wrap;
     flex-direction: column;
     list-style-type: none;
-    padding:3% 5%;
-    margin: 0px;
     justify-content:left;
-    text-decoration:none;
     box-sizing:border-box;
 }
 
 .nav-list2 li {
     padding-top:5px;
-    margin-right: 3px;
 }  
 
 .nav-list2 > li > a{
     color: #fff; 
-    padding:3px;
     text-decoration: none;
 }
 
 .nav-list2 > li  > a:hover {
     color: #222;
-    padding:4px;
-    text-decoration: none;
 }
 
 .nav-list2 > li > a:visited  a:active {
