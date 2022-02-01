@@ -24,6 +24,8 @@
 
     ul {
         padding:0;
+        padding-left: 4px;
+        margin-left: 10px;
     }
 
     .txt-center {
@@ -37,7 +39,8 @@
     }
 
     .txtr {
-        padding-left: 10px;
+        padding: 0;
+        padding-left: 15px;
     }
 
     .notmobile {
@@ -168,9 +171,23 @@
     justify-content: center;
    
 }
+
 .picture {
     flex: 1;
-    flex-basis: 10%;
+    flex-basis: 100%;
     width: 100%;
+    
+}
+
+.picture_left {
+    flex: 1;
+    flex-basis: 100%;
+    width: 100%;
+    
+}
+.picture_right {
+    flex: 1;
+    flex-basis: 100%;
+    width: 50%;
     
 }
