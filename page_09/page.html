@@ -23,60 +23,48 @@
         <!--main-->
         <main class="site-main">
             <p>
-                Je kunt met deze oplossing heel eenvoudig facturen of offertes maken die automatisch genummerd worden op basis van het jaar waarin ze verstuurd worden.
+                Vul het formulier in en verstuur het. Wij zullen dan indien nodig op uw commentaar of vragen reageren.
             </p>
-            <form name="OpmerkingenVragen" method="POST" data-netlify="true">
+            <form name="OpmerkingenVragen" class="form-container" method="POST" data-netlify="true">
                 <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
+                    <label>Naam: </label><input type="text" name="name" />
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
+                    <label>Email: </label><input type="email" name="email" />
                 </p>
                 <p>
-                    <label>Telephone number: <input type="tel" name="telephone" pattern="([+ -]|[0-9])*" /></label>
-                    <small>Use: numbers 0-9, spaces, - or + </small>
+                    <label>Telefoonnummer: </label><input type="tel" name="telephone" pattern="([+ -]|[0-9])*" />
+                </p>
+                <small>Use: numbers 0-9, spaces, - or + </small>
+                <p>
+                    <label>Leeftijd: </label><input type="Number" name="Age"  min="18" max="99" />
+                </p>
+                <small>only 18+ </small>
+                <p>
+                    <label>Geboortedatum: </label><input type="date" value="" name="DateOB" min="1922-01-01" max="2002-12-31" />
                 </p>
                 <p>
-                    <label>Your age: <input type="Number" name="Age"  min="18" max="99" /></label>
-                    <small>only 18+ </small>
-                </p>
-                <p>
-                    <label>Your date of birth: <input type="date" value="" name="DateOB" min="1922-01-01" max="2002-12-31" /></label>
-                </p>
-                <p>
-                    <label>Your gender: 
-                        <span class="gender">
-                        <input type="radio" name="Gender" value="Male" />Male
-                        <input type="radio" name="Gender" value="Female"/>Female
-                        <input type="radio" name="Gender" value="Binary"/>Binary
+                    <label>Mogen we jouw gegevens delen: </label>
+                        <span class="delen-gevens">
+                            <input type="radio" name="VraagDelen" value="Ja" />Ja
+                            <input type="radio" name="VraagDelen" value="Nee"/>Nee
                         </span>
-                    </label>
                 </p>
                 <p>
-                    <label>Your favorite cuisine: 
-                        <span class="cuisine">
-                        <input type="checkbox" name="Cuisine1" />French
-                        <input type="checkbox" name="Cuisine2" />Italian
-                        <input type="checkbox" name="Cuisine3" />Spanisch
-                        <input type="checkbox" name="Cuisine4" />Arabic
+                    <label>Wat mogen we delen: </label>
+                        <span class="wat-delen">
+                            <input type="checkbox" name="Delen_1" />Commentaar en/of vraag
+                            <input type="checkbox" name="Delen_2" />Naam
+                            <input type="checkbox" name="Delen_3" />Emailadres
+                            <input type="checkbox" name="Delen_4" />Leeftijd
                         </span>
-                    </label>
                 </p>
                 <p>
-                    <label>Your favorite apron color: <input type="color" name="Aproncolor" value="#ffaa99"/></label>
+                    <label>Wat is je commentaar of vraag: </label><textarea name="Biography" rows="5" cols="60"></textarea>
                 </p>
-                <p>
-                    <label>Your biography: <textarea name="Biography" rows="5" cols="60"></textarea></label>
-                </p>
-                <p>
-                    <label>Upload your latest recipe: <input type="file" name="Recipe" /></label>
-                </p>
-                <p>
-                    <label>URL to recipe website: <input type="url" name="URLRecipe" /></label>
-                </p>
-                <div id="buttons">
-                    <button type="submit" id="SendButton" >Send</button>
-                    <button type="reset" id="ResetButton" >Reset form</button>
+                <div id="buttons" class="formbuttons">
+                    <button type="submit" id="SendButton" >Versturen</button>
+                    <button type="reset" id="ResetButton" >Maak formulier helemaal leeg</button>
                 </div>
             </form>
             
