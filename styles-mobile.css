@@ -197,15 +197,49 @@
     width: 75%; 
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    width: 100%;
+}
+
+.form-container p {
+    display: flex;
+    color:white;
+    align-items: left;
+    width: 100%; 
+ }
+
+ .form-container label{
+    flex:2;
+    color:yellow;
+ }
+
+.form-container input, .form-container textarea, .form-container span{
+   flex:4;
+   flex-basis: 100px;
+}
+
+
+.formbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
 #ResetButton {
-    margin-left: 50%;
-    background-color:red ;
+    flex:1;
+    flex-basis: 100%;
+    background-color:rgb(251, 255, 0) ;
     border-radius: 8px;
     padding: 5px;
 }    
 
 #SendButton {
-    background-color:green ;
+    flex: 1;
+    flex-basis: 100%;
+    background-color:rgb(149, 238, 149) ;
     border-radius: 8px;
     padding: 5px;
 }    
