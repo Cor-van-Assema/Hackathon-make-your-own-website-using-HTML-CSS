@@ -60,6 +60,7 @@
         background-image: linear-gradient(#355ee2 50% , #001199);
         padding-top: 5%;
         padding-left: 1em;
+        overflow-y: scroll;
     }
 
 } /* einde media */
