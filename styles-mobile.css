@@ -206,6 +206,7 @@
 
 .form-container p {
     display: flex;
+    flex-direction: column;
     color:white;
     align-items: left;
     width: 100%; 
@@ -220,7 +221,6 @@
    flex:4;
    flex-basis: 100px;
 }
-
 
 .formbuttons {
     display: flex;
