@@ -65,4 +65,9 @@
         overflow-y: scroll;
     }
 
+    .form-container p {
+        flex-direction: row;
+     }
+    
+
 } /* einde media */

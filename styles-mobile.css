@@ -219,7 +219,7 @@
 
 .form-container input, .form-container textarea, .form-container span{
    flex:4;
-   flex-basis: 100px;
+   
 }
 
 .formbuttons {
