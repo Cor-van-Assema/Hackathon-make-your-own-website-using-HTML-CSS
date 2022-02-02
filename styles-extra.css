@@ -1,4 +1,5 @@
+/* extra CSS if needed not media dependant */
 
 .notshown {
-    visibility:collapse;
+    visibility: collapse;
 }

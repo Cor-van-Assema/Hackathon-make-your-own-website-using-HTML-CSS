@@ -26,41 +26,41 @@
                 Vul het formulier in en verstuur het. Wij zullen dan indien nodig op uw commentaar of vragen reageren.
             </p>
             <form name="OpmerkingenVragen" class="form-container" method="POST" data-netlify="true">
-                <p>
-                    <label>Naam: </label><input type="text" name="name" />
-                </p>
-                <p>
-                    <label>Email: </label><input type="email" name="email" />
-                </p>
-                <p>
-                    <label>Telefoonnummer: </label><input type="tel" name="telephone" pattern="([+ -]|[0-9])*" />
-                </p>
+                <div>
+                    <label for="input_name">Naam: </label><input type="text" id="input_name" name="name" required/>
+                </div>
+                <div>
+                    <label for="input_email">Email: </label><input type="email" id="input_email" name="email" required/>
+                </div>
+                <div>
+                    <label for="input_telephone">Telefoonnummer: </label><input type="tel" name="telephone" id="input_telephone" pattern="([+ -]|[0-9])*" />
+                </div>
                 <small>gebruik alleen cijfer 0-9, spatie, - of +</small>
-                <p>
-                    <label>Leeftijd: </label><input type="Number" name="Age"  min="18" max="99" />
-                </p>
+                <div>
+                    <label for="input_age">Leeftijd: </label><input type="Number" id="input_age" name="Age"  min="18" max="99" required/>
+                </div>
                 <small>alleen 18+</small>
-                <p>
-                    <label>Geboortedatum: </label><input type="date" value="" name="DateOB" min="1922-01-01" max="2002-12-31" />
-                </p>
-                <p>
-                    <label>Mogen we jouw gegevens delen: </label>
+                <div>
+                    <label for="input_birthdate">Geboortedatum: </label><input type="date" value="" id="input_birthdate" name="DateOB" min="1922-01-01" max="2002-12-31" />
+                </div>
+                <div>
+                    <label>Mogen we jouw gegevens delen:</label>
                         <span class="delen-gevens">
-                            <input type="radio" name="VraagDelen" value="Ja" />Ja
-                            <input type="radio" name="VraagDelen" value="Nee"/>Nee
+                            <input type="radio" id="input_Q1_yes" name="VraagDelen" value="Ja" /><label for="input_Q1_yes" required>Ja</label>
+                            <input type="radio" id="input_Q1_no"  name="VraagDelen" value="Nee"/><label for="input_Q1_no" required>Nee</label>
                         </span>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label>Wat mogen we delen: </label>
                         <span class="wat-delen">
-                            <input type="checkbox" name="Delen_1" />Commentaar en/of vraag<br>
-                            <input type="checkbox" name="Delen_2" />Naam<br>
-                            <input type="checkbox" name="Delen_3" />Emailadres
+                            <input type="checkbox" id="input_Q2_name"     name="Delen_1" /><label for="input_Q2_name">Naam</label><br>
+                            <input type="checkbox" id="input_Q2_email"    name="Delen_2" /><label for="input_Q2_email">Emailadres</label><br>
+                            <input type="checkbox" id="input_Q2_comments" name="Delen_3" /><label for="input_Q2_comments">Commentaar en/of vraag</label><br>
                         </span>
-                </p>
-                <p>
-                    <label>Wat is je commentaar of vraag: </label><textarea name="Biography" rows="8" ></textarea>
-                </p>
+                </div>
+                <div>
+                    <label for="input_comments">Wat is je commentaar of vraag: </label><textarea id="input_comments" name="Biography" rows="8" ></textarea>
+                </div>
                 <div id="buttons" class="formbuttons">
                     <button type="submit" id="SendButton" >Versturen</button>
                     <button type="reset" id="ResetButton" >Maak formulier helemaal leeg</button>
