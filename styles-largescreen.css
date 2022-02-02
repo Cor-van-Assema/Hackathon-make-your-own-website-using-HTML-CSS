@@ -32,29 +32,31 @@
             "f f f f f f f f f f f f";
             font-size: 1em;
     }
-    .container > .site-header {
+    .container .site-header {
         grid-area: h;
         background-image: linear-gradient(#4c0466 30%, #bb00ff );
     }
 
-    .container > .site-main {
+    .container .site-main {
+        display: flex;
+        flex-direction: column;
         height:100%;
         grid-area: m;
         background-image: linear-gradient(#bb00ff, red ); 
     }
 
-    .container > .site-navigation {
+    .container .site-navigation {
         grid-area: w;
         background-color: #ff0000;
         background-image: linear-gradient(red,#001199 ); 
     }
 
-    .container > .site-footer {
+    .container .site-footer {
         grid-area: f;
         background-image: linear-gradient(#001199,#060a27); 
     }
 
-    .container > .site-sidebar {
+    .container .site-sidebar {
         grid-area: s;
         background-color: #ff0000;
         background-image: linear-gradient(#355ee2 50% , #001199);
