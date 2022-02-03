@@ -222,7 +222,7 @@ a:hover {
     background-color: #999;
 }
 
-abutton:visited  a:active {
+.abutton:visited, .abutton:active {
     color: #fff;
 }
 
