@@ -136,6 +136,7 @@ ul {
 
 .nav-list-center li {
     padding-top:10px;
+    text-align: center;
 }  
 
 .nav-list-center > li > a{
@@ -297,6 +298,7 @@ abutton:visited  a:active {
     color: white;
     margin: 0;
     padding: 1%;
+    flex: 1;
 }
 
 .site-main article .q_and_a{
@@ -304,6 +306,7 @@ abutton:visited  a:active {
     background-color: rgb(10, 44, 238);
     margin: 0;
     padding: 1%;
+    flex: 1;
 }
 
 .site-main article .answer {
@@ -311,8 +314,18 @@ abutton:visited  a:active {
     background-color: rgb(82, 107, 248);
     margin: 0;
     padding: 1%;
+    flex: 1;
 }
 
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+.youtube iframe{
+   flex-basis: 100%;
+   width: 90%;
+}    
 
 small {
     padding:0;
