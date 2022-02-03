@@ -320,11 +320,11 @@ abutton:visited  a:active {
 .youtube {
     display: flex;
     justify-content: center;
+    border: 10px solid grey;
 }
 
 .youtube iframe{
-   flex-basis: 100%;
-   width: 90%;
+    width:100%;
 }    
 
 small {
