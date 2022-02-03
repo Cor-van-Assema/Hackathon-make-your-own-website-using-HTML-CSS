@@ -332,3 +332,16 @@ small {
     margin: 0;
     color:yellow
 }
+
+a {
+    color:darkorange;
+    text-decoration: none;
+}
+
+a:visited {
+    color:darkorange;
+}
+
+a:hover {
+    color:rgb(209, 212, 36);
+}
