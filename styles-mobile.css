@@ -36,12 +36,12 @@ small {
 }
 
 a {
-    color:darkorange;
+    color:rgb(0, 255, 55);
     text-decoration: none;
 }
 
-a:visited {
-    color:darkorange;
+a:visited, a:active {
+    color:rgb(0, 255, 55)ge;
 }
 
 a:hover {
