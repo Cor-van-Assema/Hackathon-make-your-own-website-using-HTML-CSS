@@ -30,17 +30,17 @@
             </p>
             <form name="OpmerkingenVragen" class="form-container" method="POST" data-netlify="true">
                 <div>
-                    <label for="input_name">Naam:* </label><input type="text" id="input_name" name="name" required/>
+                    <label for="input_name">Naam:<small>*</small> </label><input type="text" id="input_name" name="name" required/>
                 </div>
                 <div>
-                    <label for="input_email">Email:* </label><input type="email" id="input_email" name="email" required/>
+                    <label for="input_email">Email:<small>*</small> </label><input type="email" id="input_email" name="email" required/>
                 </div>
                 <div>
                     <label for="input_telephone">Telefoonnummer: </label><input type="tel" name="telephone" id="input_telephone" pattern="([+ -]|[0-9])*" />
                 </div>
                 <small>gebruik alleen cijfer 0-9, spatie, - of +</small>
                 <div>
-                    <label for="input_age">Leeftijd:* </label><input type="Number" id="input_age" name="Age"  min="18" max="99" required/>
+                    <label for="input_age">Leeftijd:<small>*</small> </label><input type="Number" id="input_age" name="Age"  min="18" max="99" required/>
                 </div>
                 <small>alleen 18+</small>
                 <div>
@@ -62,7 +62,7 @@
                         </span>
                 </div>
                 <div>
-                    <label for="input_comments">Wat is je commentaar of vraag:* </label><textarea id="input_comments" name="Comments" ></textarea>
+                    <label for="input_comments">Wat is je commentaar of vraag:<small>*</small> </label><textarea id="input_comments" name="Comments" ></textarea>
                 </div>
                 <div id="buttons" class="formbuttons">
                     <button type="submit" id="SendButton" >Versturen</button>
